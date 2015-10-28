@@ -10,6 +10,37 @@
     <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>我的第2个文章</title>
+      <link>http://localhost:1313/post/2/</link>
+      <pubDate>Tue, 27 Oct 2015 22:59:26 +0800</pubDate>
+      
+      <guid>http://localhost:1313/post/2/</guid>
+      <description>&lt;p&gt;#评论功能&lt;/p&gt;
+
+&lt;p&gt;个人博客当然不能没有评论，Hugo默认支持Disqus的评论，需要在模版中添加以下代码：&lt;/p&gt;
+
+&lt;p&gt;{{ template &amp;ldquo;_internal/disqus.html&amp;rdquo; . }}
+spf13在/layouts/partials/disqus.html中已经添加好了。&lt;/p&gt;
+
+&lt;p&gt;只需要去Disqus注册一个账号，然后在config.toml里加上：&lt;/p&gt;
+
+&lt;p&gt;disqusShortname = &amp;ldquo;yourdisqusShortname&amp;rdquo;
+注意-w参数是不能监测config.toml里参数变化的，因此需要重新运行Hugo，进入localhost:1313/about，可以看到评论功能。&lt;/p&gt;
+
+&lt;p&gt;comments
+#代码高亮&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;作为码农，代码高亮对于写博客来说当然必不可少。有两种方法：第一种是在生成页面时就生成好代码高亮过的页面；第二种是使用js，用户加载页面时浏览器再进行渲染。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;第一种方法需要使用Pygments，一个python写的工具。&lt;/p&gt;
+
+&lt;p&gt;安装Pygments：&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>测试文章</title>
       <link>http://localhost:1313/post/first/</link>
       <pubDate>Tue, 27 Oct 2015 22:59:26 +0800</pubDate>
